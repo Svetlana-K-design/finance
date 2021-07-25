@@ -1,0 +1,41 @@
+.page-main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-main__wrapper {
+  min-width: 280px;
+  margin: 0 auto;
+  
+  @media (min-width: 768px) {
+    min-width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 1220px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+.page-main__company {
+  @media(min-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
+.page-main__products {
+  margin-top: 20px;
+    
+    @media (min-width: 768px) {
+      margin-top: 40px;
+  }
+}
+
+.page-main__content  {
+  @media (min-width: 768px){
+    display: flex;
+    width: 100%;
+    justify-content: space-around;  
+  }
+}

@@ -1,0 +1,50 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  list-style: none;
+  padding: 10px;
+
+  @media (min-width: 768px) {
+    width: 70px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .social__link--instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook svg {
+    width: 19px;
+    height: 58px;
+  }
+}
+
+
+.social__link-icon {
+  fill: $icon-gray;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &--fb {
+    fill: none;
+    stroke: $icon-gray;
+
+    &:hover {
+      fill: none;
+      stroke: $basic-green;
+    }
+  }
+}
+
+.social__item:active {
+  opacity: 30%;
+}

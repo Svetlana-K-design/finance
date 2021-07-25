@@ -1,0 +1,53 @@
+.presentation {
+  color: $background;
+  background-color: $basic-green;
+  padding: 10px 30px 5px 30px;
+  
+  @media (min-width: 768px){
+    position: relative;
+    height: auto;
+    border: none;
+  }
+  
+  @media (min-width: 1440px){
+    position: relative;
+    height: auto;
+    padding: 10px 110px 5px 110px;
+  }
+}
+
+.presentation__title {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+  }
+}
+
+.presentation__description {
+  margin-top: 0;
+  text-align: center;
+  line-height: 16px;
+  
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

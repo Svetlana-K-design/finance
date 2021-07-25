@@ -1,0 +1,78 @@
+.company {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 80%;
+  
+  @media(min-width: 768px) {
+    justify-content: center;
+    min-width: 90%;
+  }
+}
+
+.company__team,
+.company__about-area  {
+  border-bottom: 1px solid $light-gray;
+  padding-bottom: 15px;
+}
+
+.company__values {
+  background: $basic-green;
+  color: $background;
+  padding: 0 10px;
+}
+
+.company__title--value {
+  margin-bottom: 0;
+}
+
+@media(min-width: 768px) {
+  .company__team {
+    width: 47%;
+    padding: 5px 14px 25px 14px;
+    position: relative;
+    background-color: $basic-gray;
+    margin-right: 14px;
+    border: none;
+  }
+  
+  .company__about-area {
+    width: 43%;
+    padding: 5px 14px 15px 14px;
+    line-height: 20px;
+    background-color: $light-gray-stats;
+  }
+  
+  .company__title--area {
+    margin-bottom: -3px;
+  }
+  
+  .company__principles {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: none;
+    width: 100%;
+  }
+  
+  .company__title--principles {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .company__values {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .company__principles {
+    margin-bottom: 20px;
+  }
+  
+  .company__values  {
+    text-align: center;
+    font-size: 16px;
+    padding: 30px;
+  }
+}
